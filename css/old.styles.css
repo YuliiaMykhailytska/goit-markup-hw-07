@@ -565,32 +565,53 @@ button {
 /* ======================/ABOUT======================*/
 
 /* ========================PORTFOLIO=================== */
-
-/* .portfolio-section {
-  padding-bottom: 120px;
-}
-
-.menu-portfolio {
-  display: flex;
-  gap: 24px;
-  padding-left: 0px;
-}
-
-.portfolio-list {
-  width: calc((100% - 48px) / 3);
-}
-
 .portfolio-second-header {
-  font-family: var(--font-family-roboto);
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--head-logo-color);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
 
-  margin-bottom: 72px;
-} */
+@media screen and (max-width: 767px) {
+  .portfolio-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-section {
+    display: block;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    padding-bottom: 120px;
+  }
+
+  .menu-portfolio {
+    display: flex;
+  }
+
+  .portfolio-second-header {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-list {
+    width: calc((100% - 48px) / 3);
+    margin-right: 24px;
+  }
+
+  .portfolio-list:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
 /* ========================/PORTFOLIO=================== */
 
 /* =====================TEAM===================== */
