@@ -92,7 +92,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 582px;
   }
 }
 
@@ -900,6 +900,10 @@ button {
 /* =====================CUSTOMERS===================== */
 
 .second-customers-header {
+  font-family: var(--font-family-roboto);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -948,8 +952,6 @@ button {
 
 @media screen and (max-width: 767px) {
   .second-customers-header {
-    font-weight: 700;
-    font-size: 36px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
@@ -964,19 +966,21 @@ button {
   }
 
   .customers-container {
+    padding-top: 96px;
+    padding-right: 108px;
+    padding-bottom: 96px;
+    padding-left: 108px;
     min-width: 320px;
-  }
-
-  .menu-customers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 72px;
-    column-gap: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .menu-customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
   .customers-section {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -1075,9 +1079,18 @@ button {
   margin: auto;
 }
 @media screen and (min-width: 768px) {
-  .footer {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-items: baseline;
+    gap: 72px;
     padding-top: 96px;
-    padding-bottom: 108px;
+    padding-right: 15px;
+    padding-bottom: 96px;
+    padding-left: 15px;
   }
 }
 @media screen and (min-width: 1158px) {
