@@ -648,21 +648,21 @@
     </footer>
 
     <!-- MODAL BTN -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal-button" data-modal-close>
           <svg class="icon-close-modal-button" width="8" height="8">
             <use href="./images/icon.svg#icon-close_modal_button"></use>
           </svg>
-        </button> -->
+        </button>
 
-    <!-- modal form -->
-    <!-- <form class="modal-form">
+        <!-- modal form -->
+        <form class="modal-form">
           <strong class="modal-title"
             >Leave your contacts and we will call you back</strong
-          > -->
-    <!-- Name -->
-    <!-- <label class="modal-form-lable">
+          >
+          <!-- Name -->
+          <label class="modal-form-lable">
             <span class="modal-form-input-desc">Name</span>
             <span class="modal-form-input-wrapper">
               <input
@@ -677,10 +677,10 @@
                 <use href="./images/icon.svg#icon-person_modal_btn"></use>
               </svg>
             </span>
-          </label> -->
+          </label>
 
-    <!-- Phone -->
-    <!-- <label class="modal-form-lable">
+          <!-- Phone -->
+          <label class="modal-form-lable">
             <span class="modal-form-input-desc">Phone</span>
             <span class="modal-form-input-wrapper">
               <input
@@ -694,10 +694,10 @@
                 <use href="./images/icon.svg#icon-phone_modal_btn"></use>
               </svg>
             </span>
-          </label> -->
+          </label>
 
-    <!-- Email -->
-    <!-- <label class="modal-form-lable">
+          <!-- Email -->
+          <label class="modal-form-lable">
             <span class="modal-form-input-desc">Email</span>
             <span class="modal-form-input-wrapper">
               <input
@@ -711,20 +711,20 @@
                 <use href="./images/icon.svg#icon-email_modal_btn"></use>
               </svg>
             </span>
-          </label> -->
+          </label>
 
-    <!-- Comment -->
-    <!-- <label class="modal-form-label-textarea">
+          <!-- Comment -->
+          <label class="modal-form-label-textarea">
             <span class="modal-form-input-desc">Comment</span>
             <textarea
               class="modal-form-textarea"
               name="user_message"
               placeholder="Text input"
             ></textarea>
-          </label> -->
+          </label>
 
-    <!-- checkbox -->
-    <!-- <label class="privacy-policy-container">
+          <!-- checkbox -->
+          <label class="privacy-policy-container">
             <input
               class="privacy-policy-checkbox"
               type="checkbox"
@@ -745,15 +745,94 @@
               I accept the terms and conditions of the
               <a class="privacy-policy-link" href="">Privacy Policy</a>
             </span>
-          </label> -->
+          </label>
 
-    <!-- btn -->
+          <!-- btn -->
 
-    <!-- <button class="modal-send-btn" type="submit">Send</button>
+          <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
-
+    </div>
+    <!-- MOBIL MENU -->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="mobile-close js-close-menu">
+        <svg width="16" height="16" class="mobile-close-button">
+          <use href="./images/icon.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <div class="mobile-list">
+        <ul class="mobile-list-navigation list">
+          <li class="menu-item-mobile">
+            <a
+              href="./index.html"
+              class="mobile-navigation-item page-status link"
+              >Studio</a
+            >
+          </li>
+          <li class="menu-item-mobile">
+            <a href="./portfolio.html" class="mobile-navigation-item link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="menu-item-mobile">
+            <a href="" class="mobile-navigation-item link">Contacts</a>
+          </li>
+        </ul>
+        <div class="contact-container-mobile">
+          <ul class="mobile-contact list">
+            <li class="mobile-contact-item">
+              <a href="tel:+110001111111" class="mobile-contact-phone link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contact-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-contact-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-li">
+              <a href="" class="mobile-social-item"
+                ><svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-li">
+              <a href="" class="mobile-social-item"
+                ><svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icon.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-li">
+              <a href="" class="mobile-social-item"
+                ><svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icon.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-li">
+              <a href="" class="mobile-social-item"
+                ><svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icon.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
