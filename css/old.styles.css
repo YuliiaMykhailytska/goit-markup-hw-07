@@ -778,9 +778,9 @@ button {
   padding-bottom: 96px;
 }
 
-.team-container {
+/* .team-container {
   width: 582px;
-}
+} */
 
 .name-container {
   width: 100%;
@@ -813,29 +813,6 @@ button {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-@media screen and (max-width: 767px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1158px) {
-  .team-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    display: flex;
-  }
-  .menu-team {
-    display: flex;
-    gap: 72px 24px;
-    justify-content: center;
-  }
-  .team-list {
-    display: flex;
-    width: calc((100% -24px) / 2);
-  }
 }
 
 .third-team-header {
@@ -1078,27 +1055,6 @@ button {
 .footer-logo-and-description {
   margin: auto;
 }
-@media screen and (min-width: 768px) {
-  .footer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    align-items: center;
-    align-items: baseline;
-    gap: 72px;
-    padding-top: 96px;
-    padding-right: 15px;
-    padding-bottom: 96px;
-    padding-left: 15px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
 
 .footer-social-media-description {
   font-weight: 500;
@@ -1223,7 +1179,51 @@ button {
   background-color: var(--menu-link-color);
 }
 
-@media screen (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-items: baseline;
+    gap: 72px 24px;
+    padding-top: 96px;
+    padding-right: 15px;
+    padding-bottom: 96px;
+    padding-left: 15px;
+  }
+  .footer-description {
+    max-width: 264px;
+  }
+  /* input + btn */
+  .subscribe-form {
+    flex-direction: row;
+  }
+  .subscribe-desc {
+    text-align: left;
+  }
+  .footer-social-media-description {
+    text-align: left;
+  }
+  .footer-size-logo {
+    text-align: center;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  .noname {
+    margin: 0 0 0 0;
+  }
+  .footer-size-logo {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 /* =====================/FOOTER===================== */
 /* /MAIN page*/
