@@ -1031,11 +1031,13 @@ button {
 .subscribe-btn:focus {
   background-color: var(--menu-link-color);
 }
-@media screen (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .subscribe-wrapper {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
     display: flex;
@@ -1102,6 +1104,15 @@ button {
   .subscribe-wrapper {
     text-align: center;
     flex-wrap: nowrap;
+  }
+  .subscribe-desc {
+    text-align: left;
+  }
+  .footer-social-media-description {
+    text-align: left;
+  }
+  .subscribe-form {
+    flex-direction: row;
   }
 }
 */
@@ -1250,7 +1261,9 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
+.close-modal-button.mobile-close-modal-button {
+  background-color: transparent;
+}
 .close-modal-button {
   position: absolute;
   top: 24px;
@@ -1469,6 +1482,7 @@ input[type="checkbox"]:checked
 .portfolio-main-link:focus .overlay {
   transform: translate(0, 0);
 }
+/* ===================MOBILE MENU=================== */
 
 .menu-toggle {
   min-height: 40px;
@@ -1534,3 +1548,149 @@ input[type="checkbox"]:checked
   color: #fff;
   text-decoration: none;
 }
+/* Mobile menu */
+
+@media screen and (max-width: 767px) {
+  .header-box {
+    min-width: 320px;
+  }
+
+  .mobile-open {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .mobile-open {
+    background-color: transparent;
+    border: none;
+    stroke: var(--head-logo-color);
+  }
+
+  .mobile-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #e7e9fc;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-close-button {
+    fill: var(--head-logo-color);
+  }
+
+  .mobile-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px 40px 40px;
+    background-color: var(--main-color);
+    z-index: 100;
+    transform: translateX(100%);
+    transition: var(--transition-duration-function);
+    overflow: scroll;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
+  .mobile-menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .mobile-list-navigation .mobile-navigation-item {
+    align-items: start;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--head-logo-color);
+  }
+
+  .mobile-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-item-mobile {
+    margin-top: 40px;
+  }
+
+  .mobile-navigation-item:hover,
+  .mobile-navigation-item.page-status {
+    color: var(--menu-link-color);
+  }
+
+  .mobile-contact-item {
+    margin-top: 40px;
+  }
+
+  .mobile-contact-phone {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--logo-color);
+  }
+
+  .mobile-contact-mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+  }
+
+  .mobile-social-list {
+    display: flex;
+    margin-top: 48px;
+    gap: 56px;
+  }
+
+  .mobile-social-li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-social-icon {
+    fill: var(--main-color);
+  }
+
+  .mobile-social-item:hover {
+    background-color: var(--menu-link-color);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-contact-phone {
+    font-size: 28px;
+  }
+
+  .mobile-social-list {
+    gap: 30px;
+  }
+}
+/* Mobile menu */
